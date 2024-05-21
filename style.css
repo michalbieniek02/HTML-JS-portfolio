@@ -9,13 +9,15 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+    margin:0 3rem ;
     color: var(--white);
     background-color: var(--dark-color);
 }
 
 .separator {
     position: absolute;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 6rem;
     top: 620px;
@@ -231,10 +233,9 @@ section#about p {
     flex-wrap: wrap;
     justify-content: space-between;
     font-size: 36px;
-    padding:0 30px;
     max-width: 100%; 
     word-wrap:break-word; 
-
+    column-gap: 10px;
 }
 .skills-description{
     display: flex;
