@@ -1,31 +1,73 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
-
-    <title>Protfolio</title>
+    <title>Portfolio</title>
 </head>
 <body>
-    <script src="./script.js" type="module"></script>
+    <script src="script.js" type="module"></script>
     <nav class="nav">
-        <h1>Michał Bieniek</h1>
+        <h1>Joe Biden</h1>
         <ul class="nav-list">
-            <li>
-                <a>Home</a>
-            </li>
-            <li>
-                <a>About Me</a>
-            </li>
-            <li>
-                <a>Projects</a>
-            </li>
-            <li>
-                <a>Contact</a>
-            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    <section id="home"> 
+    <header>
+        <div class="intro">
+          <h1>Hello, I'm <span class="name">Joe</span></h1>
+          <p>UI designer, Frontend developer. I create seamless web experiences for end-users.</p>
+          <div class="buttons">
+            <a href="#about" class="button about-me">About me <img src="./assets/user.png" alt="Person"></a>
+            <a href="#projects" class="button projects">Projects <img src="./assets/eye.png" alt="Eye"></a>
+          </div>
+        </div>
+        <div class="profile-pic">
+          <img src="./assets/hero.png" alt="Profile Picture">
+        </div>
+      </header></section>
+      <div class="separator"></div>
+      <section id="about">
+        <h2>About me:</h2>
+        <p>Hi, my name is Michał Bieniek, I am a UI designer and Fullstack web developer. I have honed my skills in Web Development and advanced I have a core understanding of advanced UI design principles.</p>
+        <p>Here are the major skills I have.</p>
+        <div class="skills-description">
+            <h1 class="zero">0+</h1>
+        <p>Years of experience. Specialised in building apps, while ensuring a seamless
+            web experience for end users.</p>
+        </div>
+        
+            <div class="skills">
+                <div class="about1">
+                    <img src="./assets/rulerPen.png" alt="logo"></img>
+                    <p>UI & UX</p>
+                    <p>DESIGNING</p>
+                </div>
+                <div class="about2">
+                    <img src="./assets/code.png" alt="logo"></img>
+                    <p>WEB</p>
+                    <p>DEVELOPMENT</p>
+                </div>
+                <div class="about2">
+                    <img src="./assets/rulerPen.png" alt="logo"></img>
+                    <p>MOBILE</p>
+                    <p>DEVELOPMENT</p>
+                </div>
+                <div class="about2">
+                    <img src="./assets/code.png" alt="logo"></img>
+                    <p>DESKTOP</p>
+                    <p>DEVELOPMENT</p>
+                </div>
+            </div>
+      </section>
+      <section id="projects"></section>      
+      <section id="contact"></section>
+
 </body>
 </html>
