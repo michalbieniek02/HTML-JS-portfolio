@@ -8,64 +8,63 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js" type="module"></script>
     <nav class="nav">
         <h1>Joe Biden</h1>
         <ul class="nav-list">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects-section">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <section id="home"> 
-    <header>
-        <div class="intro">
-          <h1>Hello, I'm <span class="name">Joe</span></h1>
-          <p>UI designer, Frontend developer. I create seamless web experiences for end-users.</p>
-          <div class="buttons">
-            <a href="#about" class="button about-me">About me <img src="./assets/user.png" alt="Person"></a>
-            <a href="#projects" class="button projects">Projects <img src="./assets/eye.png" alt="Eye"></a>
-          </div>
-        </div>
-        <div class="profile-pic">
-          <img src="./assets/hero.png" alt="Profile Picture">
-        </div>
-      </header></section>
-      <div class="separator"></div>
-      <section id="about">
+        <header>
+            <div class="intro">
+                <h1>Hello, I'm <span class="name">Joe</span></h1>
+                <p>UI designer, Frontend developer. I create seamless web experiences for end-users.</p>
+                <div class="buttons">
+                    <a href="#about" class="button about-me">About me <img src="./assets/user.png" alt="Person"></a>
+                    <a href="#projects-section" class="button projects-btn">Projects <img src="./assets/eye.png" alt="Eye"></a>
+                </div>
+            </div>
+            <div class="profile-pic">
+                <img src="./assets/hero.png" alt="Profile Picture">
+            </div>
+        </header>
+    </section>
+    <div class="separator"></div>
+    <section id="about">
         <h2>About me:</h2>
         <p>Hi, my name is Michał Bieniek, I am a UI designer and Fullstack web developer. I have honed my skills in Web Development and advanced I have a core understanding of advanced UI design principles.</p>
         <p>Here are the major skills I have.</p>
         <div class="skills-description">
             <h1 class="zero">0+</h1>
-        <p>Years of experience. Specialised in building apps, while ensuring a seamless
-            web experience for end users.</p>
+            <p>Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.</p>
         </div>
-        
-            <div class="skills">
-                <div class="about1">
-                    <img src="./assets/rulerPen.png" alt="logo"></img>
-                    <p>UI & UX</p>
-                    <p>DESIGNING</p>
-                </div>
-                <div class="about2">
-                    <img src="./assets/code.png" alt="logo"></img>
-                    <p>WEB</p>
-                    <p>DEVELOPMENT</p>
-                </div>
-                <div class="about2">
-                    <img src="./assets/rulerPen.png" alt="logo"></img>
-                    <p>MOBILE</p>
-                    <p>DEVELOPMENT</p>
-                </div>
-                <div class="about2">
-                    <img src="./assets/code.png" alt="logo"></img>
-                    <p>DESKTOP</p>
-                    <p>DEVELOPMENT</p>
-                </div>
+        <div class="skills">
+            <div class="about1">
+                <img src="./assets/rulerPen.png" alt="logo"></img>
+                <p>UI & UX</p>
+                <p>DESIGNING</p>
             </div>
-      
+            <div class="about2">
+                <img src="./assets/code.png" alt="logo"></img>
+                <p>WEB</p>
+                <p>DEVELOPMENT</p>
+            </div>
+            <div class="about2">
+                <img src="./assets/rulerPen.png" alt="logo"></img>
+                <p>MOBILE</p>
+                <p>DEVELOPMENT</p>
+            </div>
+            <div class="about2">
+                <img src="./assets/code.png" alt="logo"></img>
+                <p>DESKTOP</p>
+                <p>DEVELOPMENT</p>
+            </div>
+        </div>
         <h2>The services I offer:</h2>
         <div class="services">
             <div class="service">
@@ -90,34 +89,40 @@
             </div>
         </div>
     </section>
-    <section id="projects">
-            <h2>Featured projects:</h2>
-            <p>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</p>
-            <div class="projects">
-                <div class="project">
-                    <img src="assets/app1.jpg" alt="">
-                    <h2>TWINDER</h2>
-                    <p>A live Geolocation app for finding tweets and twitter users around you.</p>
-                    <button class="live-button">View Live</button>
+    <section id="projects-section">
+        <h2>Featured projects:</h2>
+        <p>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</p>
+        <div class="projects">
+            <div class="project">
+                <img src="assets/app1.jpg" alt="">
+                <h2>TWINDER</h2>
+                <p>A live Geolocation app for finding tweets and twitter users around you.</p>
+                <div class="project-buttons">
+                    <button class="live-button" id="live-button">View Live</button>
                     <button class="github-button" id="git-first">GitHub Repo</button>
                 </div>
-                <div class="project">
-                    <img src="assets/app2.jpg" alt="">
-                    <h2>LIVENTS</h2>
-                    <p>A video streaming app with live Geolocation, for streaming events.</p>
-                    <button class="live-button">View Live</button>
-                    <button class="github-button" id="git-second">GitHub Repo</button>
-                </div>
-                <div class="project">
-                    <img src="assets/app3.jpg" alt="">
-                    <h2>MOOVE</h2>
-                    <p>Mobile app for booking instant pickup & dropoff accross major cities.</p>
-                    <button class="live-button">View Live</button>
+            </div>
+            <div class="project">
+                <img src="assets/app2.jpg" alt="">
+                <h2>LIVENTS</h2>
+                <p>A video streaming app with live Geolocation, for streaming events.</p>
+                <div class="project-buttons">
+                <button class="live-button" id="live-button">View Live</button>
+                <button class="github-button" id="git-second">GitHub Repo</button>
+            </div>
+            </div>
+            <div class="project">
+                <img src="assets/app3.jpg" alt="">
+                <h2>MOOVE</h2>
+                <p>Mobile app for booking instant pickup accross major cities.</p>
+                <div class="project-buttons">
+                    <button class="live-button" id="live-button">View Live</button>
                     <button class="github-button" id="git-third">GitHub Repo</button>
                 </div>
             </div>
-      </section>      
-      <section id="contact">
+        </div>
+    </section>      
+    <section id="contact">
         <div class="left-side">
             <h2>Connect with me:</h2>
             <p>Satisfied with me? Please contact me</p>
@@ -129,21 +134,21 @@
             </div>
         </div>
         <div class="right-side">
-            <h1>Contact me let's make magic together</h1>
-            <form>
-                <input placeholder="Name:" type="text">
-                <input placeholder="Email:" type="email"> 
-                <input placeholder="Message:" type="text">
+            <h2>Contact me, let's make magic together</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Name:">
+                <input type="email" id="email" placeholder="Email:">
+                <input type="text" placeholder="Message:" id="message"></input>
+                <button type="submit">Send</button>
             </form>
         </div>
-      </section>
-<footer>
-    <p>&COPY;2024 Michał Bieniek</p>
-    <p>Web Developer</p>
-    <p>UI Designer</p>
-    <p>Data Analyst</p>
-    <p>Designed by @ernestechie</p>
-    
-</footer>
+    </section>
+    <footer>
+        <p>&COPY;2024 Michał Bieniek</p>
+        <p>Web Developer</p>
+        <p>UI Designer</p>
+        <p>Data Analyst</p>
+        <p>Designed by @ernestechie</p>
+    </footer>
 </body>
 </html>
