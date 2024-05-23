@@ -1,0 +1,69 @@
+section#projects-section{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    .live-button{
+        background-color: $primary-color;
+        border: none;
+        width: 40%;
+      }
+      .github-button{
+        border: 2px solid $primary-color;
+        width: 50%;
+        background-color: transparent;
+      }
+    button {
+      display: inline-flex;
+      justify-content: center;
+      padding: 0.5rem 1rem;
+      margin-right: 0.5rem;
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+      border-radius: 5px;
+    }
+    button:hover{
+      background-color: $low-priority;
+      transition: all 1s;
+    }
+    .projects{
+      margin-top: 5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .project{
+      padding: 1rem 1rem;
+      background-color: #31313F;
+      max-width: 300px;
+      max-height: 400px;
+      min-width: 250px;
+      min-height: 330px;
+      bottom: 2px;
+      justify-content: center;
+      img{
+        border-radius: 16px;
+        max-width:100%;
+        
+      }
+      .button.projects-btn{
+        border: 2px solid transparent;
+        border-radius: 5px; 
+      }
+    
+      .button.projects-btn:hover{
+        transition: all 1s;
+        border: 2px solid $primary-color;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  @media (max-width:1020px) {
+    section#projects-section{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}

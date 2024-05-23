@@ -1,0 +1,20 @@
+footer {
+    color: $low-priority;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 1024px;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width:1020px) {
+    
+    footer{
+        display: list-item;
+        list-style: none;
+        text-align: center;
+    }
+}

@@ -1,0 +1,94 @@
+section#about {
+    background-color: $dark-color;
+    .skills {
+        margin-bottom: 6rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 36px;
+        max-width: 100%;
+        column-gap: 25px;
+        row-gap: 25px;
+      }
+      .skills-description {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .about1 {
+        background-color: $primary-color;
+        padding: 7rem 2rem 2rem;
+        margin-bottom: 10px;
+        width: 18%;
+        min-width: 250px;
+      }
+      .about2 {
+        background-color: $low-priority;
+        padding: 7rem 2rem 2rem;
+        margin-bottom: 10px;
+        width: 18%;
+        min-width: 250px;
+      }
+    .services{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+      .service{
+        padding: 3rem 2rem 1rem 2rem;
+        width: 320px;
+        border: 2px solid $primary-color;
+        border-radius: 16px;
+      }
+    h2 {
+      color: $primary-color;
+    }
+    p {
+      color: $light-color;
+    }
+    .about-content{
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1024px;
+    }
+    .zero {
+        color: $primary-color;
+        font-size: 72px;
+      }
+  }
+
+  @media (max-width:1020px) {
+    
+    section#about{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+
+@media (max-width: 869px) {
+    .about1, .about2 {
+      align-self: center;
+      max-width: none;
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 750px) {
+    section#about {
+      padding: 1rem;
+      text-align: center;
+      p {
+        margin: 0.5rem auto;
+        max-width: 90%;
+      }
+    }
+  
+    .zero {
+      align-self: center;
+      margin: 2rem;
+    }
+  }
