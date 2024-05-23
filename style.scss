@@ -1,0 +1,474 @@
+
+    $light-color: #f5f5f5;
+    $low-priority: #848191;
+    $primary-color: #7562e0;
+    $secondary-color: #1c193d;
+    $dark-color: #060622;
+  
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    background-color: $dark-color;
+    margin: 0;
+    h2{
+      color: $primary-color;
+    }
+    button{
+      cursor: pointer;
+    }
+  }
+  .nav-content{
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    list-style-type: none;
+    align-items: center;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav {
+    width: 100%;
+    background-color: #131322;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      color: $primary-color;
+      transition: all 0.7s;
+    }
+    h1 {
+      color: $primary-color;
+      font-weight: 500;
+      margin-right: 40%;
+    }
+    ul {
+      text-decoration: none;
+      margin-right: 10%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+  li {
+    list-style-type: none;
+    cursor: pointer;
+  }
+  li:hover {
+    color: $primary-color;
+    transition: all 0.63s;
+  }
+  .header{
+    background-color: $dark-color;
+  }
+  .header-content {
+    padding: 1rem;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .intro {
+    max-width: 50%;
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    .name {
+      color: $primary-color;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+    z-index: 9999;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    max-height: 2rem;
+    text-decoration: none;
+    color: white;
+    margin-top: 0;
+    border-radius: 5px;
+    img {
+      margin-left: 0.5rem;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  
+  .about-me {
+    background-color: $primary-color;
+  }
+.button.projects{
+    border: 2px solid #7562e0;
+} 
+  
+  .profile-pic {
+    margin-top: 9rem;
+    background-color: $primary-color;
+    border-radius: 100%;
+    min-height: 450px;
+    min-width: 450px;
+    img {
+      top: 7rem;
+      right: 10%;
+      width: 400px;
+    }
+  }
+  section{
+    padding-bottom: 3rem;
+  }
+  
+  section#about {
+    background-color: $dark-color;
+    h2 {
+      color: $primary-color;
+    }
+    p {
+      color: $light-color;
+    }
+  }
+  .about-content{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+  }
+  
+  section#projects-section{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    button {
+      display: inline-flex;
+      justify-content: center;
+      padding: 0.5rem 1rem;
+      margin-right: 0.5rem;
+      font-size: 16px;
+      text-decoration: none;
+      color: white;
+      border-radius: 5px;
+    }
+    button:hover{
+      background-color: $low-priority;
+      transition: all 1s;
+    }
+  }
+
+  .button.projects-btn{
+    border: 2px solid transparent;
+    border-radius: 5px; 
+  }
+
+  .button.projects-btn:hover{
+    transition: all 1s;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+  }
+
+  .projects{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .project{
+    padding: 1rem 1rem;
+    background-color: #31313F;
+    max-width: 300px;
+    max-height: 400px;
+    min-width: 250px;
+    min-height: 330px;
+    bottom: 2px;
+    justify-content: center;
+    img{
+      border-radius: 16px;
+      max-width:100%;
+      
+    }
+  }
+  
+  
+  .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    max-width: 1024px;
+
+  }
+  #contact{
+    input{
+    color: white;
+    background-color:rgba(255, 255, 255, 0.155);
+    }
+    #message{
+      height: 4rem;
+    }
+    button{
+      background-color: $primary-color;
+      border-radius: 8px;
+      height: 3rem;
+    }
+  } 
+    
+  input::-webkit-input-placeholder{
+    color: $low-priority;
+  }
+
+  .separator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 6rem;
+    top: 700px;
+    background-color: #181824;
+  }
+  
+  .zero {
+    color: $primary-color;
+    font-size: 72px;
+  }
+  .skills {
+    margin-bottom: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 36px;
+    max-width: 100%;
+    column-gap: 25px;
+    row-gap: 25px;
+  }
+  .skills-description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .about1 {
+    background-color: $primary-color;
+    padding: 7rem 2rem 2rem;
+    margin-bottom: 10px;
+    width: 18%;
+    min-width: 250px;
+  }
+  .about2 {
+    background-color: $low-priority;
+    padding: 7rem 2rem 2rem;
+    margin-bottom: 10px;
+    width: 18%;
+    min-width: 250px;
+  }
+.services{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  .service{
+    padding: 3rem 2rem 1rem 2rem;
+    width: 320px;
+    border: 2px solid $primary-color;
+    border-radius: 16px;
+  }
+  
+  section#contact{
+    button{
+      border: none;
+    }
+    button:hover{
+      background-color: $low-priority;
+      border: 2px solid $primary-color;
+      transition: all 1s;
+    }
+  }
+  .live-button{
+    background-color: $primary-color;
+    border: none;
+    width: 40%;
+  }
+  .github-button{
+    border: 2px solid $primary-color;
+    width: 50%;
+    background-color: transparent;
+  }
+
+  .right-side{
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input{
+      padding: 0.5rem;
+      height: 2rem;
+      border: none;
+      border-radius: 5px;
+    }
+  } 
+  
+  footer {
+    color: $low-priority;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 1024px;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+  }
+  @media (max-width:1020px) {
+    
+    footer{
+        display: list-item;
+        list-style: none;
+        text-align: center;
+    }
+    .right-side{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+    }
+    .left-side{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    section#about{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    section#projects-section{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    section#contact{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media (max-width: 869px) {
+    .about1, .about2 {
+      align-self: center;
+      max-width: none;
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .nav {
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        margin-left: 0;
+        margin-bottom: 1rem;
+      }
+      ul {
+        padding-right: 0;
+        gap: 15px;
+      }
+    }
+  
+    .header-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .intro {
+      max-width: 90%;
+      margin: 0 auto;
+      margin-right: 1rem;
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  
+    .profile-pic {
+      align-self: center;
+      max-width: 100px;
+      max-height: 100px;
+      img {
+        width: 100%;
+        top: 1rem;
+        max-width: 300px;
+        position: relative;
+        right: 0;
+      }
+    }
+  
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    .button {
+      margin-bottom: 10px;
+      margin-right: 0;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .separator {
+      top: 880px;
+      height: 8.5rem;
+    }
+  
+    section#about {
+      padding: 1rem;
+      text-align: center;
+      p {
+        margin: 0.5rem auto;
+        max-width: 90%;
+      }
+    }
+  
+    .zero {
+      align-self: center;
+      margin: 2rem;
+    }
+  }
+  
+  @media (max-width: 507px) {
+    .profile-pic {
+      position: relative;
+      min-height: 200px;
+      min-width: 200px;
+      width: 100px;
+      img {
+        transform: translateY(-80px);
+      }
+    }
+    .separator {
+      display: none;
+    }
+    .zero {
+      margin: 2rem;
+    }
+  }
+  

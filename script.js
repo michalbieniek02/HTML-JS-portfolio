@@ -30,7 +30,7 @@
 
         emailjs.send('service_hw8s3la', 'template_mggthw5', templateParams)
             .then(function(response) {
-                alert('Message has been sent');
+                alert('Message has been sent.');
             }, function(error) {
                 alert('Error sending message');
             });
